@@ -23,6 +23,13 @@ jobs:
         with:
           python-version: "3.12"
       - run: python tools/build.py
+      # First run: try to switch Pages on (source "GitHub Actions") so nobody has to click
+      # through Settings -> Pages. Harmless when it is already on; if the token may not, the
+      # next step reports it and the owner enables Pages by hand once.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+        continue-on-error: true
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
