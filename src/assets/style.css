@@ -1,0 +1,75 @@
+:root {
+  --bg: #0f1512;
+  --bg-2: #16201b;
+  --panel: #1d2a23;
+  --ink: #e9efe6;
+  --ink-dim: #a7b5ab;
+  --moss: #6fae5c;
+  --reed: #c8b55a;
+  --lantern: #f2a541;
+  --tide: #4fa3c7;
+  --line: #2b3a31;
+  --max: 920px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.55;
+}
+a { color: var(--reed); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--lantern); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; background: var(--bg-2); padding: 0.1em 0.35em; border-radius: 4px; }
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, #121b16, var(--bg));
+}
+header.site .inner, main, footer.site .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header.site .inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+header.site .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); font-weight: 700; letter-spacing: 0.02em; }
+header.site .brand img { width: 36px; height: 36px; image-rendering: pixelated; }
+header.site nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.95rem; }
+header.site nav a { color: var(--ink-dim); text-decoration: none; }
+header.site nav a[aria-current="page"], header.site nav a:hover { color: var(--ink); }
+main { padding: 36px 20px 64px; }
+h1, h2, h3 { line-height: 1.2; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 0.4em; }
+h2 { font-size: 1.5rem; margin: 2.2em 0 0.6em; color: var(--moss); }
+h3 { font-size: 1.15rem; margin: 1.6em 0 0.4em; }
+p.lede { font-size: 1.25rem; color: var(--ink-dim); max-width: 42rem; }
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; margin-top: 12px; }
+.hero img { width: 100%; image-rendering: pixelated; border: 1px solid var(--line); border-radius: 6px; background: #000; }
+.badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+.badge { display: inline-block; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); text-decoration: none; font-weight: 600; }
+.badge.primary { background: var(--lantern); color: #1a1208; border-color: transparent; }
+.badge.muted { color: var(--ink-dim); border-style: dashed; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.shots figure { margin: 0; }
+.shots img { width: 100%; image-rendering: pixelated; border: 1px solid var(--line); border-radius: 6px; }
+.shots figcaption { color: var(--ink-dim); font-size: 0.9rem; margin-top: 6px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; }
+.card h3 { margin-top: 0; color: var(--reed); }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.97rem; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink-dim); font-weight: 600; }
+.notice { border-left: 3px solid var(--lantern); background: var(--bg-2); padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 1.2em 0; }
+.steps { counter-reset: step; list-style: none; padding: 0; }
+.steps li { counter-increment: step; position: relative; padding-left: 44px; margin: 14px 0; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--moss); color: #0f1512; font-weight: 700; display: grid; place-items: center; }
+footer.site { border-top: 1px solid var(--line); color: var(--ink-dim); font-size: 0.9rem; padding: 24px 0 40px; }
+footer.site .inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.legal p, .legal li { max-width: 46rem; }
+.muted { color: var(--ink-dim); }
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; }
+  header.site .inner { flex-direction: column; align-items: flex-start; padding: 12px 20px; }
+}

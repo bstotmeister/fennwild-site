@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{include:head}}
+<title>Android play test — {{game_name}}</title>
+<meta name="description" content="Join the closed Android test of {{game_name}} and help it reach Google Play.">
+</head>
+<body>
+{{include:header}}
+<main>
+  <h1>Join the Android play test</h1>
+  <p class="lede">Google asks new developers to run a closed test with at least 12 players for 14 days before a game can go public. You can be one of them.</p>
+
+  <div class="notice">
+    <strong>What we ask:</strong> install the game from the test link, open it a few times over two weeks, and keep it installed for the whole 14 days. Play as much or as little as you like; one honest bug report is worth more than ten hours of silence.
+  </div>
+
+  <!-- if:testers_play_optin_url -->
+  <h2>How to join</h2>
+  <ol class="steps">
+    <!-- if:testers_google_group_url --><li>Join the tester group: <a href="{{testers_google_group_url}}">{{testers_google_group_url}}</a> (a Google Group; this is how Play knows you are a tester).</li><!-- endif -->
+    <li>Opt in on Google Play with the same Google account: <a href="{{testers_play_optin_url}}">{{testers_play_optin_url}}</a>.</li>
+    <li>Install {{game_name}} from the Play Store<!-- if:testers_web_install_url --> or straight from <a href="{{testers_web_install_url}}">this link</a><!-- endif -->. Updates arrive automatically.</li>
+    <li>Play. Tell us what breaks or feels wrong on the <a href="{{site_url}}/support">support page</a>.</li>
+  </ol>
+  <!-- endif -->
+  <!-- ifnot:testers_play_optin_url -->
+  <h2>Sign-ups open soon</h2>
+  <p>The closed-testing track is being set up. Check back shortly, or watch the <a href="{{support_url}}">GitHub project</a> for the announcement. If you already know you want in, open an issue titled "Tester" with the Google account email you use on your phone and we will add you as soon as the track is live.</p>
+  <!-- endif -->
+
+  <h2>What you are testing</h2>
+  <p>The first zone, Reedmarsh: the village, Reed Road, wild encounters fought in place, bonding, swapping, your first rival and a walker who guards the road. Later builds add the next zones as they are finished. Test builds show Google's test ads rather than real ones.</p>
+
+  <h2>Requirements</h2>
+  <p>Android 7.0 or newer, about 150 MB free, a Google account. Phones and tablets are both fine. The game is for players aged 13 and over.</p>
+
+  <h2>Privacy</h2>
+  <p>The test build stores saves on your device only and shows Google test ads; see the <a href="{{site_url}}/privacy">privacy policy</a>. We never see your email unless you write to us. Leaving the test is one tap on the same opt-in page.</p>
+</main>
+{{include:footer}}
+</body>
+</html>

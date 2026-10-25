@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{include:head}}
+<title>Press kit — {{game_name}}</title>
+<meta name="description" content="Fact sheet, description, screenshots and logo for {{game_name}} by {{studio}}.">
+</head>
+<body>
+{{include:header}}
+<main>
+  <h1>Press kit</h1>
+  <p class="lede">Everything here may be used freely in coverage of {{game_name}}.</p>
+
+  <h2>Fact sheet</h2>
+  <table>
+    <tr><th>Title</th><td>{{game_name}}</td></tr>
+    <tr><th>Developer</th><td>{{studio}} (solo)</td></tr>
+    <tr><th>Release</th><td>{{release_window}}</td></tr>
+    <tr><th>Platforms</th><td>{{platforms}}</td></tr>
+    <tr><th>Price</th><td>Mobile: {{price_mobile}}. Steam: {{price_steam}}.</td></tr>
+    <tr><th>Genre</th><td>Creature-bonding action RPG, top-down pixel art</td></tr>
+    <tr><th>Length</th><td>5–8 hours; ~50 kith to bond</td></tr>
+    <tr><th>Engine</th><td>Godot 4</td></tr>
+    <tr><th>Website</th><td><a href="{{site_url}}/">{{site_url}}</a></td></tr>
+    <tr><th>Contact</th><td><!-- if:contact_email --><a href="mailto:{{contact_email}}">{{contact_email}}</a><!-- endif --><!-- ifnot:contact_email -->{{press_contact_note}}<!-- endif --></td></tr>
+  </table>
+
+  <h2>Description</h2>
+  <p>{{game_name}} takes the classic creature-collecting road trip and removes the one thing everyone skips: the battle screen. When a wild kith rises from the grass, the camera locks on the spot where you are standing, you step aside, and you take direct control of the kith that follows you. Fights happen in real time with four abilities on cooldown, a dodge with invulnerability frames and attacks that are telegraphed before they land. Bond the kith you beat, swap mid-fight, and follow the dimming heartlight through five zones to the Wardens who went silent.</p>
+
+  <h2>Short description</h2>
+  <p>A creature-bonding RPG where every encounter is a real-time fight in the grass you're standing in. Four abilities, a dodge, eight aspects, five zones, four Wardens.</p>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Encounters fought in place: the overworld <em>is</em> the arena.</li>
+    <li>Real-time combat built for thumbs and pads alike: four abilities, dodge i-frames, telegraphs.</li>
+    <li>About fifty original kith across eight aspects, each with two strengths and two weaknesses.</li>
+    <li>Five hand-built zones, rival encounters, four Warden fights with phases, and a finale.</li>
+    <li>Original pixel art and music. No accounts, no energy timers, no gacha.</li>
+  </ul>
+
+  <h2>Screenshots and logo</h2>
+  <p class="muted">Work-in-progress captures at native 480×270; final art is in production. Right-click to save.</p>
+  <div class="shots">
+    <figure><img src="{{site_url}}/assets/img/screenshot_battle.png" alt="" width="480" height="270"><figcaption>Wild encounter in place</figcaption></figure>
+    <figure><img src="{{site_url}}/assets/img/screenshot_village.png" alt="" width="480" height="270"><figcaption>Reedmarsh Village</figcaption></figure>
+    <figure><img src="{{site_url}}/assets/img/screenshot_route.png" alt="" width="480" height="270"><figcaption>Reed Road</figcaption></figure>
+    <figure><img src="{{site_url}}/assets/img/screenshot_title.png" alt="" width="480" height="270"><figcaption>Title</figcaption></figure>
+    <figure><img src="{{site_url}}/assets/img/icon.svg" alt="" width="128" height="128" style="width:128px;image-rendering:auto"><figcaption>Icon (SVG)</figcaption></figure>
+  </div>
+
+  <h2>About {{studio}}</h2>
+  <p>{{studio}} is a one-person studio making compact, finished games with original art. {{game_name}} is its first title.</p>
+</main>
+{{include:footer}}
+</body>
+</html>

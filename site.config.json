@@ -1,0 +1,22 @@
+{
+    "_comment": "Public site configuration. Fill in the placeholders as the store accounts come online (Checkpoint 3). Everything here is public.",
+    "game_name": "Fennwild",
+    "studio": "Reedlight Games",
+    "tagline": "A creature-bonding RPG where every encounter is a real-time fight in the grass you're standing in.",
+    "site_url": "https://bstotmeister.github.io/fennwild-site",
+    "contact_email": "",
+    "support_url": "https://github.com/bstotmeister/fennwild-site/issues",
+    "press_contact_note": "Press enquiries: use the contact email once listed, or open a GitHub issue.",
+    "governing_law": "the United States",
+    "privacy_effective_date": "2026-10-25",
+    "store_google_play_url": "",
+    "store_app_store_url": "",
+    "store_steam_url": "",
+    "testers_google_group_url": "",
+    "testers_play_optin_url": "",
+    "testers_web_install_url": "",
+    "release_window": "2027",
+    "price_mobile": "Free with ads; one $3.99 purchase removes them",
+    "price_steam": "$4.99, no ads",
+    "platforms": "Android, iOS, Windows, Linux (Steam)"
+}

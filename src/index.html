@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{include:head}}
+<title>{{game_name}} — a creature-bonding RPG with real-time fights</title>
+<meta name="description" content="{{tagline}}">
+<meta property="og:title" content="{{game_name}}">
+<meta property="og:description" content="{{tagline}}">
+</head>
+<body>
+{{include:header}}
+<main>
+  <section class="hero">
+    <div>
+      <h1>{{game_name}}</h1>
+      <p class="lede">{{tagline}}</p>
+      <p>The marsh-country of the Fennwild runs on the heartlight, and the light is dimming. You are a new Fenwalker from Reedmarsh Village, sent out with one bonded kith to find out why the five Wardens have gone silent.</p>
+      <div class="badges">
+        <!-- if:store_google_play_url --><a class="badge primary" href="{{store_google_play_url}}">Google Play</a><!-- endif -->
+        <!-- if:store_app_store_url --><a class="badge primary" href="{{store_app_store_url}}">App Store</a><!-- endif -->
+        <!-- if:store_steam_url --><a class="badge primary" href="{{store_steam_url}}">Steam</a><!-- endif -->
+        <!-- ifnot:store_steam_url --><span class="badge muted">Coming {{release_window}} to {{platforms}}</span><!-- endif -->
+        <a class="badge" href="{{site_url}}/testers">Join the Android play test</a>
+      </div>
+    </div>
+    <img src="{{site_url}}/assets/img/screenshot_battle.png" alt="A wild encounter: the camera has locked onto a patch of tall grass and the player's kith fights a wild one in real time." width="480" height="270">
+  </section>
+
+  <h2>Every encounter is a fight where you stand</h2>
+  <div class="cards">
+    <div class="card"><h3>No battle screen</h3><p>Walk into tall grass and a wild kith rises. The camera locks on the spot, you step aside and take direct control of the kith at your heel.</p></div>
+    <div class="card"><h3>Four abilities and a dodge</h3><p>Real-time combat with cooldowns, telegraphed attacks and invulnerable dodge frames. Read the flash, roll through it, punish.</p></div>
+    <div class="card"><h3>Bond, swap, grow</h3><p>Weaken a wild kith and throw a bond charm. Swap mid-fight. Eight aspects, each beating two and beaten by two.</p></div>
+    <div class="card"><h3>Five zones, four Wardens</h3><p>Reedmarsh, Thornbrake, Emberscar, Glasshollow and the Sky Moors, ending in the Heartfen. A compact 5–8 hour adventure.</p></div>
+  </div>
+
+  <h2>Screens</h2>
+  <p class="muted">Work-in-progress captures; the final art is being drawn.</p>
+  <div class="shots">
+    <figure><img src="{{site_url}}/assets/img/screenshot_village.png" alt="Reedmarsh Village overworld" width="480" height="270"><figcaption>Reedmarsh Village, where every run begins.</figcaption></figure>
+    <figure><img src="{{site_url}}/assets/img/screenshot_route.png" alt="Reed Road with tall grass" width="480" height="270"><figcaption>Reed Road. The grass is where it happens.</figcaption></figure>
+    <figure><img src="{{site_url}}/assets/img/screenshot_battle_touch.png" alt="Battle with touch controls" width="480" height="270"><figcaption>Touch layout on phones: joystick, four abilities, dodge, swap, charm.</figcaption></figure>
+  </div>
+
+  <h2>Platforms and price</h2>
+  <table>
+    <tr><th>Android and iOS</th><td>{{price_mobile}}. Optional rewarded ads revive a fallen party or double XP for a while; nothing is gated behind them.</td></tr>
+    <tr><th>Steam (Windows, Linux)</th><td>{{price_steam}}. Keyboard, mouse and controller.</td></tr>
+  </table>
+
+  <h2>Made by {{studio}}</h2>
+  <p>A one-developer studio. Fennwild is built in the open-source Godot engine with original pixel art, music and creatures. Questions, bugs, ideas: see <a href="{{site_url}}/support">support</a>.</p>
+</main>
+{{include:footer}}
+</body>
+</html>
